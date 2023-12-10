@@ -37,7 +37,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [Single price grid component by HTML and CSS (Sass)](https://www.frontendmentor.io/solutions/single-price-grid-component-by-html-and-css-sass-lko1qj6JDz)
-- Live Site URL: [Single price grid component](https://vangmanawkairung.github.io/single-price-grid/)
+- Live Site URL: [Social proof section](https://vangmanawkairung.github.io/social-proof-section/)
 
 ## My process
 

@@ -146,6 +146,7 @@ body .container .bottom-box .third-box .comment {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -100;
   }
   body .bottom-background {
     width: 1085px;
@@ -156,18 +157,96 @@ body .container .bottom-box .third-box .comment {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -100;
   }
   body .container {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
+    padding: 110px 165px 100px 165px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    translate: -50% -50%;
+    display: grid;
+    grid-template-rows: 40% 60%;
   }
   body .container .top-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  body .container .top-box .left-box {
+    padding-right: 35%;
+  }
+  body .container .top-box .left-box h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+  body .container .top-box .left-box p {
+    line-height: 1.5rem;
+  }
+  body .container .top-box .right-box {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  body .container .top-box .right-box .rating-box {
+    width: 445px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  body .container .top-box .right-box .rating-box .stars {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: 40%;
+  }
+  body .container .top-box .right-box .rating-box .detail {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  body .container .top-box .right-box .rating-box:first {
+    margin-right: 90px;
+  }
+  body .container .top-box .right-box .rating-box:nth-child(2) {
+    margin: 0 45px;
+  }
+  body .container .top-box .right-box .rating-box:last-child {
+    margin-left: 90px;
+  }
+  body .container .bottom-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  body .container .bottom-box div.first-box,
+  body .container .bottom-box div.second-box,
+  body .container .bottom-box div.third-box {
+    width: 350px;
+    height: 240px;
+    padding: 35px 30px;
+  }
+  body .container .bottom-box div.first-box .name,
+  body .container .bottom-box div.second-box .name,
+  body .container .bottom-box div.third-box .name {
+    font-weight: 700;
+  }
+  body .container .bottom-box div.first-box .comment,
+  body .container .bottom-box div.second-box .comment,
+  body .container .bottom-box div.third-box .comment {
+    font-weight: 400;
+  }
+  body .container .bottom-box .first-box {
+    margin-bottom: 30px;
+  }
+  body .container .bottom-box .first-box .comment {
+    letter-spacing: 0.8px;
+  }
+  body .container .bottom-box .second-box {
+    margin: 15px 0;
+  }
+  body .container .bottom-box .third-box {
+    margin-top: 30px;
   }
 }

@@ -4,7 +4,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## Table of contents
 
-- [Frontend Mentor - Single price grid component solution](#frontend-mentor---single-price-grid-component-solution)
+- [Frontend Mentor - Social proof section solution](#frontend-mentor---social-proof-section-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -27,17 +27,17 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Screenshot
 <details>
 <summary><strong>Mobile View</strong></summary>
-<img src="./result/mobile view.png">
+<img src="source/result/mobile.png">
 </details>
 <details>
 <summary><strong>Descktop View</strong></summary>
-<img src="./result/desktop view.png">
+<img src="source/result/desktop.png">
 </details>
 
 ### Links
 
-- Solution URL: [Single price grid component by HTML and CSS (Sass)](https://www.frontendmentor.io/solutions/single-price-grid-component-by-html-and-css-sass-lko1qj6JDz)
-- Live Site URL: [Social proof section](https://vangmanawkairung.github.io/social-proof-section/)
+- Solution URL: [Responsive social proof section page with Sass](https://www.frontendmentor.io/solutions/responsive-social-proof-section-page-with-sass-ka_PHHd2jj)
+- Live Site URL: [Frontend Mentor | Social proof section](https://vangmanawkairung.github.io/Frontend-Mentor_social-proof-section/)
 
 ## My process
 

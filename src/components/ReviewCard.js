@@ -13,7 +13,7 @@ const ReviewCard = () => {
               <p className="reviewer-status">{reviewInfo.status}</p>
             </div>
           </div>
-          <p className="review-statement">{reviewInfo.review}</p>
+          <p className="review-statement">{`" ${reviewInfo.review} "`}</p>
         </div>
       ))}
     </section>

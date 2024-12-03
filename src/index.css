@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: hsl(0, 0%, 100%);
   background-image: url(./assets/bg-pattern-top-mobile.svg),
     url(./assets/bg-pattern-bottom-mobile.svg);
@@ -18,4 +18,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (min-width: 1240px) {
+  body {
+    height: 100vh;
+    background-image: url(./assets/bg-pattern-top-desktop.svg),
+      url(./assets/bg-pattern-bottom-desktop.svg);
+
+    background-position: top left, bottom right;
+  }
 }

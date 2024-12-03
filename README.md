@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Responsive social proof section page with Sass](https://www.frontendmentor.io/solutions/responsive-social-proof-section-page-with-sass-ka_PHHd2jj)
+- Solution URL: [Responsive social proof section page with React and Sass](https://www.frontendmentor.io/solutions/responsive-social-proof-section-page-with-react-and-sass-_OgQ1_ngxG)
 - Live Site URL: [Frontend Mentor | Social proof section](https://github.com/VangmanawKairung/Frontend-Mentor_social-proof-section)
 
 ## My process

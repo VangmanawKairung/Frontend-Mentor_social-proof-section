@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor_social-proof-section/static/css/main.28a8062b.css",
+    "main.js": "/Frontend-Mentor_social-proof-section/static/js/main.2e96aecd.js",
+    "index.html": "/Frontend-Mentor_social-proof-section/index.html",
+    "static/media/bg-pattern-bottom-desktop.svg": "/Frontend-Mentor_social-proof-section/static/media/bg-pattern-bottom-desktop.32aa6571dc718836bdfc.svg",
+    "static/media/bg-pattern-bottom-mobile.svg": "/Frontend-Mentor_social-proof-section/static/media/bg-pattern-bottom-mobile.593835ec67fd27ee2a62.svg",
+    "static/media/bg-pattern-top-desktop.svg": "/Frontend-Mentor_social-proof-section/static/media/bg-pattern-top-desktop.9d4ba9c9b19e4c6be1e6.svg",
+    "static/media/bg-pattern-top-mobile.svg": "/Frontend-Mentor_social-proof-section/static/media/bg-pattern-top-mobile.58eed600d32e18ece9dc.svg",
+    "static/media/icon-star.svg": "/Frontend-Mentor_social-proof-section/static/media/icon-star.2d8e7b7cb342bc812e9df51d276eaa78.svg",
+    "main.28a8062b.css.map": "/Frontend-Mentor_social-proof-section/static/css/main.28a8062b.css.map",
+    "main.2e96aecd.js.map": "/Frontend-Mentor_social-proof-section/static/js/main.2e96aecd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28a8062b.css",
+    "static/js/main.2e96aecd.js"
+  ]
+}

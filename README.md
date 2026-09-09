@@ -1,23 +1,25 @@
 # Frontend Mentor - Social proof section solution
 
+![](.reference/desktop-preview.jpg)
+
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Frontend Mentor - Social proof section solution](#frontend-mentor---social-proof-section-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+    - [AI Collaboration](#ai-collaboration)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,20 +31,20 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<details>
+  <summary>Mobile view</summary>
+  <img src='screenshots/mobile-view.png' alt='Social poof section - Mobile view' width='375px'>
+</details>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<details>
+  <summary>Desktop view</summary>
+  <img src='screenshots/desktop-view.png' alt='Social poof section - Desktop view'>
+</details>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Responsive Social Proof Section built with React, Vite & BEM](https://www.frontendmentor.io/solutions/responsive-social-proof-section-page-with-react-and-sass-_OgQ1_ngxG)
+- Live Site URL: [Frontend Mentor | Social proof section](https://challenged-by-frontend-mentor.github.io/social-proof-section/)
 
 ## My process
 
@@ -54,68 +56,81 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Vite](https://vitejs.dev/) - Frontend tooling
+- [BEM Methodology](https://getbem.com/) - Class naming convention for maintainable CSS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Working on this project helped me build a faster, more organized development workflow while maintaining clean React code and structured BEM CSS.
 
-To see how you can add code snippets, see below:
+Key takeaways from this challenge:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+- **Staggered Layout Alignment**: I learned how to combine CSS Grid row definitions with Flexbox `align-self` positioning (`flex-start`, `center`, `flex-end`) on `:nth-child` selectors to create the staggered "staircase" effect for cards on desktop.
+
+- **Content Fluidity & Responsiveness**: Using `min-height` instead of fixed heights prevents layout breaks and text overflow when font size scales or zoom levels change.
+
+- **Accessible Component Design**: I practiced hiding decorative visual elements like star icons from screen readers using `aria-hidden="true"` while maintaining semantic structure with `blockquote` and `p` tags.
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+// Dynamically rendering star icons using Array.from() inside JSX
+const Stars = () => {
+  return (
+    <div className="rating-card__stars" aria-hidden="true">
+      {Array.from({ length: 5 }).map((_, index) => (
+        <img key={index} src={IconStar} alt="" className="rating-card__star-icon" />
+      ))}
+    </div>
+  );
+};
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+/* Staggering card positions cleanly with CSS */
+@media (min-width: 1024px) {
+  .rating-card:nth-child(1),
+  .review-card:nth-child(1) {
+    align-self: flex-start;
+  }
+  .rating-card:nth-child(2),
+  .review-card:nth-child(2) {
+    align-self: center;
+  }
+  .rating-card:nth-child(3),
+  .review-card:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In upcoming projects, I want to keep refining my core CSS skills and development practices:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Fluid Design Techniques**: Exploring `clamp()` and dynamic viewport units to handle layout and font scaling without relying on fixed pixel breakpoints.
+
+- **Semantic & Naming Precision**: Continuing to practice finding the most natural, idiomatic BEM names and semantic HTML elements.
+
+- **Micro-interactions**: Adding subtle CSS transitions and hover states to enhance overall user experience.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Looping inside JSX - Stack Overflow](https://stackoverflow.com/questions/47287177/how-to-loop-over-a-number-in-react-inside-jsx) - This thread helped me cleanly loop through a fixed number in JSX using `Array.from()` to render star icons without unnecessary boilerplate.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+- **Tools Used**: Gemini and Google Search AI Mode.
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+- **Workflow & Support**: Used as an active thought partner for code reviews, checking accessibility best practices, validating CSS Grid behaviors, and refining BEM class architecture.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub: [Kairung Vangmanaw](https://github.com/VangmanawKairung)
+- Frontend Mentor - [@VangmanawKairung](https://www.frontendmentor.io/profile/VangmanawKairung)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- **To Myself & Family**: Proud of staying consistent, working smarter, and pushing my coding skills further every day—and deeply grateful to my family for their constant support.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- **Frontend Mentor**: Thank you to the Frontend Mentor team for providing realistic, beautifully designed challenges that make learning fun.
+
+- **Tools & Utilities**: A special shoutout to the built-in **macOS Preview app—using** it to inspect precise pixel coordinates directly saved a lot of trial-and-error time! Thanks as well to VS Code, Chrome DevTools, and AI tools for making the development process smooth and enjoyable.
